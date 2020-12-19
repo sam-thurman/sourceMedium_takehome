@@ -1,6 +1,12 @@
 #### Report- overall percentage-based table
 
-- Are percent values (numbered columns) supposed to represent the percentage of customers from each cohort that stayed enrolled (were retained) over the following months?
-- Can I assume that if a `customer_id` has orders in the months following their first purchase, they can be considered "retained" for that month? (repeat customer rate)
-- Does `subscription_type` have anything to do w/ retention
-- I'm getting an error "while reading table": "Found corrupted data while opening file". Query still works fine. Will this cause problems when connecting to Data Studio?
+- Can I assume that if a `customer_id` has orders in consecutive months following their first purchase, they can be considered "retained" for those month? (repeat customer rate)
+- follow up: How should I treat customers with orders in non-consecutive months(ex: orders in months 2,4 and 5)? Retained or not retained? (currently assuming they are considered not retained)
+
+#### Report - filterable table
+
+- Are `net_revenue`, `num_customers`, `order_count` calculated regardless of retention? Or should I only calculate cohort totals based on retained customers?
+
+#### Report - LTV
+
+- is `cumulative revenue for a cohort` calculated by month
