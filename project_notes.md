@@ -20,3 +20,6 @@ FROM `source-medium-take-home.SM_test_project_dataset.Maintb`
 GROUP BY customer_id
 HAVING ord_count>1)
 ```
+
+**Number of distinct `discount_codes`**
+4960
